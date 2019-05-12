@@ -52,9 +52,18 @@
         $strAppId;
         $strAppName;
         $strAppPackage; 
-        //<h4 class="media-heading" title="儿童涂色动物园ios"
+        //-->疯狂填色绘本HD<
         $h4 = $div->find('span[class=text]',0);
         $strAppName = $h4->innertext;
+        $strhead = "-->";
+        $strend = "<";
+        $pos = strpos($strAppName,$strhead);
+        if($pos>=0){
+            $strAppName = strstr($strAppName,$strhead);
+            $strAppName = strstr($strAppName,$strend,TRUE);
+            $strAppName = substr($strAppName ,strlen($strhead), strlen($strAppName)-strlen($strhead) ) ;
+        }
+
         //<span class="field-value">1106701789</span>
         $span = $div->find('span[class=field-value]',0);
         $strAppId = $span->innertext; 
@@ -111,7 +120,7 @@
                 //插屏 
  
                 if(!$strAdIdInsert){
-                    $adid = getAdId(array_div,$tr,"插屏"); 
+                    $adid = getAdId(array_div,$tr,"插屏2.0"); 
                     if($adid){
                         $strAdIdInsert = $adid;
                         echo "insert ad id: \n"; 
@@ -125,7 +134,7 @@
                 //横幅
 
                 if(!$strAdIdBanner){
-                    $adid = getAdId(array_div,$tr,"Banner"); 
+                    $adid = getAdId(array_div,$tr,"Banner2.0"); 
                     if($adid){
                         $strAdIdBanner = $adid;
                         echo "banner ad id: \n"; 

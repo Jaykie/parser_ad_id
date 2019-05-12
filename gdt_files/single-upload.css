@@ -1,0 +1,33 @@
+.icons{width:15px;height:15px;display:inline-block;background-repeat:no-repeat;font-size:0;vertical-align:middle;margin-top:-3px}
+.icons-file{background-position:0 0}
+.icons-success{background-position:-19px 0}
+.icons-notice-error{background-position:0 -19px}
+.icons-remove-lg{background-position:-19px -19px}
+.remove:hover .icons-remove-lg{background-position:0 -38px}
+.spaui-upload-bulk .btn .form-control{display:none}
+.upload-list{overflow:hidden}
+.upload-list>li{box-sizing:border-box;position:relative;border:1px solid #e0e0e0;height:40px;margin-top:10px;margin-bottom:0;line-height:2;font-size:12px;-webkit-transition:margin-bottom .4s;transition:margin-bottom .4s}
+.upload-list>li:after,.upload-list>li:before{display:table;content:''}
+.upload-list>li .file-info,.upload-list>li .file-name{padding:7px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.upload-list>li .remove{display:inline-block;border-left:1px solid #e0e0e0;margin-left:10px;padding-left:10px;cursor:pointer}
+.upload-list>li .file-name{float:left;width:50%;color:#999;padding-right:0}
+.upload-list>li .file-name .icons{margin-right:5px}
+.upload-list>li .file-info{padding-left:0;text-align:right;color:#008dea}
+.upload-list>li .file-info .status .icons{margin-right:5px}
+.upload-list>li .progress{display:block;height:1px;margin-bottom:0;background-color:transparent;border-radius:0;position:absolute;bottom:-1px;left:0;right:0}
+.upload-list>li .help{height:0;overflow:hidden;-webkit-transition:height .4s;transition:height .4s}
+.upload-list>li.has-error{margin-bottom:28px}
+.upload-list>li.has-error .progress{display:none}
+.upload-list>li.has-error .file-info,.upload-list>li.has-error .help{color:#e33244}
+.upload-list>li.has-error .help{height:24px;overflow:hidden}
+.upload-list>li.has-success .help,.upload-list>li.has-success .progress{display:none}
+.upload-list>li.has-success .file-info{color:#33c3a5}
+.icons-file,.icons-success,.icons-notice-error,.icons-remove-lg,.remove:hover .icons-remove-lg{background-image:url(../images/sprites/single-upload.png?20170721145417)}
+@media only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi),only screen and (min-resolution:2dppx){.icons-file,.icons-success,.icons-notice-error,.icons-remove-lg,.remove:hover .icons-remove-lg{background-image:url(../images/sprites/single-upload@2x.png?20170721145417);background-size:32px auto}
+.icons-file{background-position:0 0}
+.icons-success{background-position:-17px 0}
+.icons-notice-error{background-position:0 -17px}
+.icons-remove-lg{background-position:-17px -17px}
+.remove:hover .icons-remove-lg{background-position:0 -34px}}
+.css_stamp{content:"20170721145417"}
+#CssGaga{content:"170721145429,hug,334"}
