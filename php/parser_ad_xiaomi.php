@@ -206,7 +206,7 @@ function get_html($url)
     
     
     
-    parserHomeList('../xiaomi.htm',"../xiaomi.json");
+    parserHomeList('../xiaomi.html',"../xiaomi.json");
     
     echo 'done<br>';
     ?>

@@ -63,6 +63,8 @@
             $strAppName = strstr($strAppName,$strend,TRUE);
             $strAppName = substr($strAppName ,strlen($strhead), strlen($strAppName)-strlen($strhead) ) ;
         }
+       $strAppName =$strAppName."_ad2.0";
+        
 
         //<span class="field-value">1106701789</span>
         $span = $div->find('span[class=field-value]',0);
@@ -196,6 +198,6 @@
      
     
     
-     parserAd('../gdt.htm',"../gdt.json"); 
+     parserAd('../gdt.html',"../gdt.json"); 
     echo 'done<br>';
     ?>
