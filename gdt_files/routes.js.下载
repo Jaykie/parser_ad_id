@@ -317,6 +317,11 @@ _nS('controllers.PlacementController'); _root['controllers']['PlacementControlle
           return _wA({method:"POST", url:"/" + "placement/updatePauseStatus" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("placementId", placementId1), (function(k,v){return k+'='+(!!v)})("pauseStatus", pauseStatus2)])})
         }
       ;
+_nS('controllers.PlacementController'); _root['controllers']['PlacementController']['unfreezePlacement'] = 
+        function(memberId0,placementId1) {
+          return _wA({method:"POST", url:"/" + "placement/unfreezePlacement" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("placementId", placementId1)])})
+        }
+      ;
 _nS('controllers.PlacementController'); _root['controllers']['PlacementController']['getPlacementListByMediumId'] = 
         function() {
           return _wA({method:"POST", url:"/" + "placement/getPlacementListByMediumId"})
@@ -525,6 +530,11 @@ _nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlo
 _nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['uploadSearchPic'] = 
         function() {
           return _wA({method:"POST", url:"/" + "adreview/uploadPic"})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['getTrafficGroup'] = 
+        function(memberId0) {
+          return _wA({method:"GET", url:"/" + "adreview/trafficGroup/" + (function(k,v) {return v})("memberId", memberId0)})
         }
       ;
 _nS('controllers.FilterManagementController'); _root['controllers']['FilterManagementController']['searchFilterRuleList'] = 
