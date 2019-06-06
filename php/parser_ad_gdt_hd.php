@@ -198,7 +198,7 @@
      
     
     
-     parserAd('../gdt.html',"../gdt.json"); 
-     //parserAd('../gdt_hd.html',"../gdt_hd.json");
+     //parserAd('../gdt.html',"../gdt.json"); 
+     parserAd('../gdt_hd.html',"../gdt_hd.json");
     echo 'done<br>';
     ?>
