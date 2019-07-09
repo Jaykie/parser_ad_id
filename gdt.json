@@ -2,13 +2,13 @@
     "List": [
         {
             "source": "gdt",
-            "appname": "儿童爱拼图ios_ad2.0",
-            "appid": "1106852729",
-            "key_splash": "2060036483922564",
-            "key_splash_insert": "3010161953744360",
-            "key_insert": "3010161953744360",
+            "appname": "儿童拼拼乐_ad2.0",
+            "appid": "1106436814",
+            "key_splash": "3090829603460161",
+            "key_splash_insert": "5000361938290829",
+            "key_insert": "5000361938290829",
             "key_native": "0",
-            "key_banner": "6090267983347209"
+            "key_banner": "3030963968697838"
         }
     ]
 }
