@@ -81,6 +81,7 @@
         $strAdIdSplash;
         $strAdIdInsert;
         $strAdIdBanner;
+        $strAdIdVideo;
         //解析广告位
         
         
@@ -145,6 +146,18 @@
                     }
                     
                 } 
+
+                //激励视频
+                if(!$strAdIdVideo){
+                    $adid = getAdId(array_div,$tr,"激励视频"); 
+                    if($adid){
+                        $strAdIdVideo = $adid;
+                        echo "strAdIdVideo ad id: \n"; 
+                        echo $adid;
+                        echo "\n"; 
+                    }
+                    
+                } 
                 
             }
             
@@ -164,6 +177,10 @@
         if(!$strAdIdBanner){
             $strAdIdBanner = $adid_default;
         }
+        if(!$strAdIdVideo){
+            $strAdIdVideo = $adid_default;
+        }
+        
 
         $list = array(); 
         $element = array 
@@ -175,6 +192,7 @@
          'key_splash_insert'=>urlencode($strAdIdInsert),
          'key_insert'=>urlencode($strAdIdInsert),
          'key_native'=>urlencode($strAdIdNative),
+         'key_video'=>urlencode($strAdIdVideo),
          'key_banner'=>urlencode($strAdIdBanner)
          ); 
         array_push( $list,$element);

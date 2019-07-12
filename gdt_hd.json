@@ -1,1 +1,15 @@
-{"List":[{"source":"gdt","appname":"儿童拼拼乐HD_ad2.0","appid":"1106436816","key_splash":"9030028673169184","key_splash_insert":"7060363998996876","key_insert":"7060363998996876","key_native":"0","key_banner":"7030468938698845"}]}
+{
+    "List": [
+        {
+            "source": "gdt",
+            "appname": "儿童拼拼乐HD_ad2.0",
+            "appid": "1106436816",
+            "key_splash": "9030028673169184",
+            "key_splash_insert": "7060363998996876",
+            "key_insert": "7060363998996876",
+            "key_native": "0",
+            "key_video": "0",
+            "key_banner": "7030468938698845"
+        }
+    ]
+}
