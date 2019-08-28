@@ -1,15 +1,1 @@
-{
-    "List": [
-        {
-            "source": "gdt",
-            "appname": "儿童连连乐_ad2.0",
-            "appid": "1106825611",
-            "key_splash": "8020133319784228",
-            "key_splash_insert": "9060162457365341",
-            "key_insert": "9060162457365341",
-            "key_native": "0",
-            "key_video": "0",
-            "key_banner": "4040661497465217"
-        }
-    ]
-}
+{"List":[{"source":"gdt","appname":"中华唐诗大会_ad2.0","appid":"1109737089","key_splash":"0","key_splash_insert":"9070581274705033","key_insert":"9070581274705033","key_native":"0","key_video":"4070084254309025","key_banner":"7050683294401032"}]}

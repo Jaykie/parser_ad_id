@@ -332,6 +332,11 @@ _nS('controllers.PlacementController'); _root['controllers']['PlacementControlle
           return _wA({method:"POST", url:"/" + "placement/unfreezePlacement" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("placementId", placementId1)])})
         }
       ;
+_nS('controllers.PlacementController'); _root['controllers']['PlacementController']['addPlacementVersion'] = 
+        function(memberId0,placementId1) {
+          return _wA({method:"POST", url:"/" + "placement/addPlacementVersion" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("placementId", placementId1)])})
+        }
+      ;
 _nS('controllers.PlacementController'); _root['controllers']['PlacementController']['getPlacementListByMediumId'] = 
         function() {
           return _wA({method:"POST", url:"/" + "placement/getPlacementListByMediumId"})

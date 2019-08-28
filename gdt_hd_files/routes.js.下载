@@ -77,6 +77,16 @@ _nS('controllers.ReportController'); _root['controllers']['ReportController']['d
           return _wA({method:"POST", url:"/" + "report/download"})
         }
       ;
+_nS('controllers.ReportController'); _root['controllers']['ReportController']['queryBillingSettlement'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "report/queryBillingSettlement"})
+        }
+      ;
+_nS('controllers.ReportController'); _root['controllers']['ReportController']['getMemberSupplierInfo'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "report/memberSupplierInfo"})
+        }
+      ;
 _nS('controllers.RegisterController'); _root['controllers']['RegisterController']['getProvicne'] = 
         function(memberId0) {
           return _wA({method:"GET", url:"/" + "province/get" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0)])})
@@ -322,6 +332,11 @@ _nS('controllers.PlacementController'); _root['controllers']['PlacementControlle
           return _wA({method:"POST", url:"/" + "placement/unfreezePlacement" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("placementId", placementId1)])})
         }
       ;
+_nS('controllers.PlacementController'); _root['controllers']['PlacementController']['addPlacementVersion'] = 
+        function(memberId0,placementId1) {
+          return _wA({method:"POST", url:"/" + "placement/addPlacementVersion" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("placementId", placementId1)])})
+        }
+      ;
 _nS('controllers.PlacementController'); _root['controllers']['PlacementController']['getPlacementListByMediumId'] = 
         function() {
           return _wA({method:"POST", url:"/" + "placement/getPlacementListByMediumId"})
@@ -330,6 +345,11 @@ _nS('controllers.PlacementController'); _root['controllers']['PlacementControlle
 _nS('controllers.PlacementController'); _root['controllers']['PlacementController']['getTemplateType'] = 
         function(memberId0,placementId1) {
           return _wA({method:"GET", url:"/" + "placement/templateType/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("placementId", placementId1)})
+        }
+      ;
+_nS('controllers.PlacementController'); _root['controllers']['PlacementController']['deletePlacement'] = 
+        function(memberId0,placementId1) {
+          return _wA({method:"POST", url:"/" + "placement/delete/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("placementId", placementId1)})
         }
       ;
 _nS('controllers.TemplateController'); _root['controllers']['TemplateController']['getTemplate'] = 

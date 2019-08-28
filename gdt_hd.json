@@ -1,15 +1,1 @@
-{
-    "List": [
-        {
-            "source": "gdt",
-            "appname": "宝宝连连乐HD_ad2.0",
-            "appid": "1105563451",
-            "key_splash": "0",
-            "key_splash_insert": "8010265469818749",
-            "key_insert": "8010265469818749",
-            "key_native": "0",
-            "key_video": "0",
-            "key_banner": "3010660459919717"
-        }
-    ]
-}
+{"List":[{"source":"gdt","appname":"宝宝水果猜猜乐HD_ad2.0","appid":"1109743712","key_splash":"0","key_splash_insert":"9040583072924718","key_insert":"9040583072924718","key_native":"0","key_video":"0","key_banner":"9070987012826757"}]}
