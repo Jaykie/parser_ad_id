@@ -87,6 +87,11 @@ _nS('controllers.ReportController'); _root['controllers']['ReportController']['g
           return _wA({method:"POST", url:"/" + "report/memberSupplierInfo"})
         }
       ;
+_nS('controllers.ReportController'); _root['controllers']['ReportController']['getRealTimeChartData'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "report/getRealTimeChartData"})
+        }
+      ;
 _nS('controllers.RegisterController'); _root['controllers']['RegisterController']['getProvicne'] = 
         function(memberId0) {
           return _wA({method:"GET", url:"/" + "province/get" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("memberId", memberId0)])})
@@ -237,6 +242,11 @@ _nS('controllers.MediumController'); _root['controllers']['MediumController']['v
           return _wA({method:"POST", url:"/" + "medium/verifyPackageName"})
         }
       ;
+_nS('controllers.MediumController'); _root['controllers']['MediumController']['getIndustryTree'] = 
+        function() {
+          return _wA({method:"GET", url:"/" + "medium/industry"})
+        }
+      ;
 _nS('controllers.SettlementController'); _root['controllers']['SettlementController']['searchMonthBillsList'] = 
         function() {
           return _wA({method:"GET", url:"/" + "settlement/search"})
@@ -270,11 +280,6 @@ _nS('controllers.SettlementController'); _root['controllers']['SettlementControl
 _nS('controllers.SettlementController'); _root['controllers']['SettlementController']['isApiMember'] = 
         function(memberId0,month1) {
           return _wA({method:"GET", url:"/" + "settlement/apiMember/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("month", month1)})
-        }
-      ;
-_nS('controllers.SettlementController'); _root['controllers']['SettlementController']['getPayProgress'] = 
-        function() {
-          return _wA({method:"POST", url:"/" + "settlement/pay/progress"})
         }
       ;
 _nS('controllers.MtaController'); _root['controllers']['MtaController']['getAllMtaReportApplicationInfoByMemberId'] = 
@@ -553,8 +558,33 @@ _nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlo
         }
       ;
 _nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['getTrafficGroup'] = 
-        function(memberId0) {
-          return _wA({method:"GET", url:"/" + "adreview/trafficGroup/" + (function(k,v) {return v})("memberId", memberId0)})
+        function(memberId0,autoPolicy1) {
+          return _wA({method:"GET", url:"/" + "adreview/trafficGroup/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("autoPolicy", autoPolicy1)})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['getSpecificTypePlacements'] = 
+        function(memberId0,placementType1) {
+          return _wA({method:"GET", url:"/" + "placement/listByPlacementType/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("placementType", encodeURIComponent(placementType1))})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['searchReviewAfterExposure'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "exposurereview/search"})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['setReviewAfterExposureBlockBatchStatus'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "exposurereview/block/batch"})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['getBlockNum'] = 
+        function(memberId0,trafficGroupId1) {
+          return _wA({method:"GET", url:"/" + "exposurereview/blocknum/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("trafficGroupId", trafficGroupId1)})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['setAdvertiserBlockStatus'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "exposurereview/advertiser/block"})
         }
       ;
 _nS('controllers.FilterManagementController'); _root['controllers']['FilterManagementController']['searchFilterRuleList'] = 
@@ -600,6 +630,11 @@ _nS('controllers.FilterManagementController'); _root['controllers']['FilterManag
 _nS('controllers.FilterManagementController'); _root['controllers']['FilterManagementController']['addFilterRuleWithNoPlacements'] = 
         function() {
           return _wA({method:"POST", url:"/" + "filter/rule/addFilterRuleWithNoPlacements"})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['editTrafficGroupContent'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "filter/trafficGroup/editTrafficGroupContent"})
         }
       ;
 _nS('controllers.PdbController'); _root['controllers']['PdbController']['getPDBContractList'] = 
