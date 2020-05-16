@@ -1,0 +1,19 @@
+.spaui-select-tree {
+  min-width: 140px;
+}
+.spaui-select-tree .spaui-level .select-list {
+  border: none;
+}
+.spaui-select-tree .spaui-dropdown .selection-drop {
+  max-height: 274px;
+}
+.spaui-select-tree.with-search .spaui-dropdown .selection-drop {
+  max-height: 310px;
+}
+.spaui-select-tree .select-list .scope > ul > li.checked {
+  background: #f8f9fa;
+}
+.spaui-select-tree .spaui-select .selection-drop {
+  width: auto;
+  min-width: 100%;
+}

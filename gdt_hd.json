@@ -1,1 +1,13 @@
-{"List":[{"source":"gdt","appname":"开心猜猜乐HD_ad2.0","appid":"1110016337","key_splash":"0","key_splash_insert":"2070190313908219","key_insert":"2070190313908219","key_native":"0","key_video":"9070199313703380","key_banner":"6070094393107278"}]}
+{
+    "List": {
+        "appid": "1109679481",
+        "appname": "宝宝动物猜猜乐HD",
+        "key_banner": "9071505129739613",
+        "key_insert": "6091202159330605",
+        "key_native": "0",
+        "key_splash": "0",
+        "key_splash_insert": "6091202159330605",
+        "key_video": "8061504149834656",
+        "source": "gdt"
+    }
+}

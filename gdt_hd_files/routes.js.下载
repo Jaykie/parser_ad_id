@@ -282,6 +282,21 @@ _nS('controllers.SettlementController'); _root['controllers']['SettlementControl
           return _wA({method:"GET", url:"/" + "settlement/apiMember/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("month", month1)})
         }
       ;
+_nS('controllers.SettlementController'); _root['controllers']['SettlementController']['getSettlementConversion'] = 
+        function(memberId0) {
+          return _wA({method:"GET", url:"/" + "settlement/conversion/" + (function(k,v) {return v})("memberId", memberId0)})
+        }
+      ;
+_nS('controllers.SettlementController'); _root['controllers']['SettlementController']['verifyAdvertiserInfo'] = 
+        function(memberId0,advertiserId1) {
+          return _wA({method:"GET", url:"/" + "settlement/getCustomerInfo/" + (function(k,v) {return v})("memberId", encodeURIComponent(memberId0)) + "/" + (function(k,v) {return v})("advertiserId", encodeURIComponent(advertiserId1))})
+        }
+      ;
+_nS('controllers.SettlementController'); _root['controllers']['SettlementController']['decideSettlementConversion'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "settlement/conversion/addOrUpdate"})
+        }
+      ;
 _nS('controllers.MtaController'); _root['controllers']['MtaController']['getAllMtaReportApplicationInfoByMemberId'] = 
         function(memberId0) {
           return _wA({method:"GET", url:"/" + "mta/getAllMtaReportApplicationInfoByMemberId/" + (function(k,v) {return v})("memberId", memberId0)})
@@ -355,6 +370,21 @@ _nS('controllers.PlacementController'); _root['controllers']['PlacementControlle
 _nS('controllers.PlacementController'); _root['controllers']['PlacementController']['deletePlacement'] = 
         function(memberId0,placementId1) {
           return _wA({method:"POST", url:"/" + "placement/delete/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("placementId", placementId1)})
+        }
+      ;
+_nS('controllers.PlacementController'); _root['controllers']['PlacementController']['batchUpdatePlacementPauseStatus'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "placement/batchUpdatePauseStatus"})
+        }
+      ;
+_nS('controllers.PlacementController'); _root['controllers']['PlacementController']['batchDeletePlacement'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "placement/batchDelete"})
+        }
+      ;
+_nS('controllers.PlacementController'); _root['controllers']['PlacementController']['batchUnfreezePlacement'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "placement/batchUnfreeze"})
         }
       ;
 _nS('controllers.TemplateController'); _root['controllers']['TemplateController']['getTemplate'] = 
@@ -565,6 +595,21 @@ _nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlo
 _nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['getSpecificTypePlacements'] = 
         function(memberId0,placementType1) {
           return _wA({method:"GET", url:"/" + "placement/listByPlacementType/" + (function(k,v) {return v})("memberId", memberId0) + "/" + (function(k,v) {return v})("placementType", encodeURIComponent(placementType1))})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['setReviewSearchRule'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "adreview/searchRule/add"})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['getReviewSearchRule'] = 
+        function(memberId0) {
+          return _wA({method:"GET", url:"/" + "adreview/searchRule/" + (function(k,v) {return v})("memberId", memberId0)})
+        }
+      ;
+_nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['deleteReviewSearchRule'] = 
+        function() {
+          return _wA({method:"POST", url:"/" + "adreview/searchRule/delete"})
         }
       ;
 _nS('controllers.CreativeBlockingController'); _root['controllers']['CreativeBlockingController']['searchReviewAfterExposure'] = 
