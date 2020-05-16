@@ -116,7 +116,7 @@ class ParseAdGdt():
     def SaveJson(self,filePath,dataRoot):  
         # 保存json
         with open(filePath, 'w') as f:
-            json.dump(dataRoot, f, ensure_ascii=False,indent=4,sort_keys = True)
+            json.dump(dataRoot, f, ensure_ascii=False,indent=4,sort_keys = False)
 
     
  
